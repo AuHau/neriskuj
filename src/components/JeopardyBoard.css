@@ -1,0 +1,119 @@
+.jeopardy-board {
+  width: 100vw;
+  min-height: 100vh;
+  background-color: #060CE9;
+  display: flex;
+  flex-direction: column;
+}
+
+.board-grid {
+  display: flex;
+  flex: 1;
+  gap: 4px;
+  padding: 4px;
+}
+
+.board-column {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  gap: 4px;
+}
+
+.board-cell {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #060CE9;
+  border: 2px solid #000;
+  cursor: pointer;
+  text-align: center;
+  padding: 8px;
+  min-height: 80px;
+  flex: 1;
+}
+
+.board-cell:hover {
+  background-color: #1a1aff;
+}
+
+.board-cell.chosen {
+  background-color: #060CE9;
+  cursor: default;
+}
+
+.board-cell.chosen:hover {
+  background-color: #060CE9;
+}
+
+.category-name {
+  font-family: 'Swiss921', sans-serif;
+  font-size: 1rem;
+  color: #fff;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  line-height: 1.2;
+}
+
+.clue-value {
+  font-family: 'Swiss921', sans-serif;
+  font-size: 2rem;
+  color: #D4AF37;
+  font-weight: bold;
+}
+
+.board-cell.chosen .clue-value {
+  visibility: hidden;
+}
+
+.clue-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: #060CE9;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  z-index: 100;
+  padding: 40px;
+  box-sizing: border-box;
+}
+
+.clue-label {
+  font-family: 'Swiss921', sans-serif;
+  font-size: 1.2rem;
+  color: #D4AF37;
+  margin-bottom: 32px;
+  text-transform: uppercase;
+}
+
+.clue-text {
+  font-family: 'Korinna', serif;
+  font-size: 2.5rem;
+  color: #fff;
+  text-align: center;
+  line-height: 1.4;
+  max-width: 900px;
+}
+
+.proceed-button {
+  margin: 16px auto;
+  display: block;
+  padding: 12px 32px;
+  font-family: 'Swiss921', sans-serif;
+  font-size: 1.2rem;
+  background-color: #D4AF37;
+  color: #000;
+  border: none;
+  cursor: pointer;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+}
+
+.proceed-button:hover {
+  background-color: #e6c84a;
+}
