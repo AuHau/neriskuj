@@ -10,7 +10,7 @@ const App: React.FC = () => {
     const [error, setError] = useState<string | null>(null);
 
     useEffect(() => {
-        fetch('/game.json')
+        fetch(`${process.env.PUBLIC_URL}/game.json`)
             .then(res => {
                 if (!res.ok) throw new Error('Failed to load game.json');
                 return res.json();
