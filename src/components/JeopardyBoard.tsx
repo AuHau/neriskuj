@@ -80,7 +80,7 @@ const JeopardyBoard: React.FC<Props> = ({ categories, onProceedToFinal }) => {
             </div>
             {allChosen && (
                 <button className="proceed-button" onClick={onProceedToFinal}>
-                    Proceed to Final Jeopardy
+                    Jdeme na finální otázku
                 </button>
             )}
         </div>

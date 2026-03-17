@@ -12,7 +12,7 @@ const styles: Record<string, React.CSSProperties> = {
     container: {
         width: '100vw',
         height: '100vh',
-        backgroundColor: '#060CE9',
+        backgroundColor: '#001699',
         display: 'flex',
         flexDirection: 'column',
         alignItems: 'center',
@@ -23,7 +23,7 @@ const styles: Record<string, React.CSSProperties> = {
     },
     label: {
         fontFamily: 'Swiss921, sans-serif',
-        fontSize: '1.2rem',
+        fontSize: '3rem',
         color: '#D4AF37',
         marginBottom: '32px',
         textTransform: 'uppercase' as const,
@@ -38,7 +38,7 @@ const styles: Record<string, React.CSSProperties> = {
     },
     clue: {
         fontFamily: 'Korinna, serif',
-        fontSize: '2.5rem',
+        fontSize: '6rem',
         color: '#fff',
         textAlign: 'center' as const,
         lineHeight: 1.4,
@@ -70,7 +70,7 @@ const FinalJeopardy: React.FC<Props> = ({ round, onFinishGame }) => {
 
     return (
         <div style={styles.container} onClick={advance}>
-            <div style={styles.label}>Final Jeopardy</div>
+            <div style={styles.label}>Prémiová otázka</div>
             {phase === 'category' ? (
                 <div style={styles.category}>{round.category}</div>
             ) : (

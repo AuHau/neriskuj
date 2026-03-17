@@ -1,6 +1,6 @@
 .app {
   min-height: 100vh;
-  background-color: #060CE9;
+  background-color: #001699;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -15,7 +15,7 @@
 
 .app-done {
   font-family: 'Swiss921', sans-serif;
-  font-size: 3rem;
+  font-size: 7rem;
   color: #fff;
   text-align: center;
 }
