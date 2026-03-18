@@ -4,6 +4,7 @@ import { GameData, RoundName, ActiveClue } from '../types';
 import JeopardyBoard from './JeopardyBoard';
 import FinalJeopardy from './FinalJeopardy';
 import Confetti from './Confetti';
+import Intro from './Intro';
 
 interface GameState {
     round: RoundName;
@@ -13,7 +14,7 @@ interface GameState {
 }
 
 const INITIAL_STATE: GameState = {
-    round: 'single',
+    round: 'intro',
     finalIndex: 0,
     chosenClues: [],
     activeClue: null,
@@ -64,6 +65,10 @@ const App: React.FC = () => {
                 <div className="app-loading">Loading...</div>
             </div>
         );
+    }
+
+    if (gameState.round === 'intro') {
+        return <Intro onStart={() => transition({ ...gameState, round: 'single' })} />;
     }
 
     if (gameState.round === 'done') {

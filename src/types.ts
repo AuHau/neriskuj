@@ -25,7 +25,7 @@ export interface GameData {
     game: Game;
 }
 
-export type RoundName = "single" | "final" | "done";
+export type RoundName = "intro" | "single" | "final" | "done";
 
 export interface ActiveClue {
     category: string;
