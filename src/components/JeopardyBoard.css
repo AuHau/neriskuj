@@ -47,7 +47,7 @@
 }
 
 .category-name {
-  font-family: 'Swiss921', sans-serif;
+  font-family: 'Oswald', sans-serif;
   font-size: 2.3rem;
   color: #fff;
   text-transform: uppercase;
@@ -56,7 +56,7 @@
 }
 
 .clue-value {
-  font-family: 'Swiss921', sans-serif;
+  font-family: 'Oswald', sans-serif;
   font-size: 3.5rem;
   color: #c99f57;
   font-weight: bold;
@@ -84,7 +84,7 @@
 }
 
 .clue-label {
-  font-family: 'Swiss921', sans-serif;
+  font-family: 'Oswald', sans-serif;
   font-size: 4rem;
   color: #D4AF37;
   margin-bottom: 32px;
@@ -92,7 +92,7 @@
 }
 
 .clue-text {
-  font-family: 'Korinna', serif;
+  font-family: 'Lora', serif;
   font-size: 6rem;
   color: #fff;
   text-align: center;
@@ -104,7 +104,7 @@
   margin: 16px auto;
   display: block;
   padding: 12px 32px;
-  font-family: 'Swiss921', sans-serif;
+  font-family: 'Oswald', sans-serif;
   font-size: 1.2rem;
   background-color: #D4AF37;
   color: #000;

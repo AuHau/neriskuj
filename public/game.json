@@ -2,77 +2,27 @@
     "game": {
         "single": [
             {
-                "category": "Děti",
-                "clues": [
-                    {
-                        "value": 400,
-                        "clue": "V kolik hodin přesně (na minuty) se narodila Žofka?"
-                    },
-                    {
-                        "value": 800,
-                        "clue": "Kolik bylo Adince, když začala chodit?"
-                    },
-                    {
-                        "value": 600,
-                        "clue": "Jaká byla první slova Adinky a Žofky?"
-                    },
-                    {
-                        "value": 1000,
-                        "clue": "Jak nazvala Žofka holčičí verzi draka?"
-                    },
-                    {
-                        "value": 200,
-                        "clue": "Kde jsou teď vaše děti?"
-                    }
-                ]
-            },
-            {
                 "category": "(Společné) zážitky",
                 "clues": [
                     {
-                        "value": 800,
-                        "clue": "Kdo jako první projevil jiné než pouze kamarádské city?"
-                    },
-                    {
-                        "value": 200,
+                        "value": 100,
                         "clue": "Kde nejdále jste spolu byli, myšleno geograficky :-)"
                     },
                     {
-                        "value": 1000,
-                        "clue": "Jak zní celý název diplomové práce Aničky. Stačí vyjmenovat alespoň jeden."
-                    },
-                    {
-                        "value": 400,
+                        "value": 200,
                         "clue": "Kolik km ujel Tomáš nejvíce na kole v rámci jednoho dne?"
                     },
                     {
-                        "value": 600,
+                        "value": 300,
                         "clue": "Kolikrát se Anička zúčastnila legendárního závodu Tour de Bier?"
-                    }
-                ]
-            },
-            {
-                "category": "Každodenní radosti",
-                "clues": [
-                    {
-                        "value": 1000,
-                        "clue": "Kolik dětí se v poslední dekádě narodilo přítomným hostům?"
-                    },
-                    {
-                        "value": 200,
-                        "clue": "Kolik má Anička sestřenic?"
-                    },
-                    {
-                        "value": 800,
-                        "clue": "Kdo myje doma častěji záchod/ záchody (máte celkem tři!)"
                     },
                     {
                         "value": 400,
-                        "clue": "Kdo tráví více času na záchodě?"
+                        "clue": "Jak zní celý název diplomové práce Aničky. Stačí vyjmenovat alespoň jeden."
                     },
                     {
-                        "value": 600,
-                        "clue": "Kdo utrácí více peněz?"
+                        "value": 500,
+                        "clue": "Kdo jako první projevil jiné než pouze kamarádské city?"
                     }
                 ]
             },
@@ -80,24 +30,74 @@
                 "category": "Co bylo, to bylo",
                 "clues": [
                     {
-                        "value": 800,
-                        "clue": "Jak se jmenovala holčičí partička, které byla Anička během studia na LG součástí?"
+                        "value": 100,
+                        "clue": "Kde jste spolu poprvé bydleli?"
                     },
                     {
                         "value": 200,
                         "clue": "Kdo z příbuzenstva byl v pořadu \"Prostřeno\"?"
                     },
                     {
-                        "value": 1000,
-                        "clue": "Kde jste spolu poprvé bydleli?"
-                    },
-                    {
-                        "value": 600,
+                        "value": 300,
                         "clue": "Kolik kilometru to je z Jičína do vaší oblíbené letní destinace ?"
                     },
                     {
                         "value": 400,
                         "clue": "Na jakém oku nosil Tomáš okluzor?"
+                    },
+                    {
+                        "value": 500,
+                        "clue": "Jak se jmenovala holčičí partička, které byla Anička během studia na LG součástí?"
+                    }
+                ]
+            },
+            {
+                "category": "Děti",
+                "clues": [
+                    {
+                        "value": 100,
+                        "clue": "Kolik bylo Adince, když začala chodit?"
+                    },
+                    {
+                        "value": 200,
+                        "clue": "Jaká byla první slova Adinky a Žofky?"
+                    },
+                    {
+                        "value": 300,
+                        "clue": "V kolik hodin přesně (na minuty) se narodila Žofka?"
+                    },
+                    {
+                        "value": 400,
+                        "clue": "Jak nazvala Žofka holčičí verzi draka?"
+                    },
+                    {
+                        "value": 500,
+                        "clue": "Kde jsou teď vaše děti?"
+                    }
+                ]
+            },
+            {
+                "category": "Každodenní radosti",
+                "clues": [
+                    {
+                        "value": 100,
+                        "clue": "Kdo utrácí více peněz?"
+                    },
+                    {
+                        "value": 200,
+                        "clue": "Kdo tráví více času na záchodě?"
+                    },
+                    {
+                        "value": 300,
+                        "clue": "Kdo myje doma častěji záchod/ záchody (máte celkem tři!)"
+                    },
+                    {
+                        "value": 400,
+                        "clue": "Kolik má Anička sestřenic?"
+                    },
+                    {
+                        "value": 500,
+                        "clue": "Kolik dětí se v poslední dekádě narodilo přítomným hostům?"
                     }
                 ]
             },
@@ -105,32 +105,38 @@
                 "category": "Svatba",
                 "clues": [
                     {
-                        "value": 800,
-                        "clue": "Kdo během vaší svatby dostal kapačku?"
-                    },
-                    {
-                        "value": 400,
-                        "clue": "Jaké občerstvení připravovala na svatbu sestřenice Jana?"
-                    },
-                    {
-                        "value": 1000,
-                        "clue": "Kde čůrala Anička cestou na obřad?"
-                    },
-                    {
-                        "value": 600,
-                        "clue": "Jaké hudební nástroje zazněly během obřadu?"
+                        "value": 100,
+                        "clue": "Kdo vezl nevěstu/ženicha na obřad?"
                     },
                     {
                         "value": 200,
-                        "clue": "Kdo vezl nevěstu/ženicha na obřad?"
+                        "clue": "Kdo během vaší svatby dostal kapačku?"
+                    },
+                    {
+                        "value": 300,
+                        "clue": "Jaké hudební nástroje zazněly během obřadu?"
+                    },
+                    {
+                        "value": 400,
+                        "clue": "Kde čůrala Anička cestou na obřad?"
+                    },
+                    {
+                        "value": 500,
+                        "clue": "Jaké občerstvení připravovala na svatbu sestřenice Jana?"
                     }
                 ]
             }
         ],
-        "final": {
-            "category": "Finálová kategorie",
-            "clue": "Co chybí? No přece finální otázka",
-            "solution": ""
-        }
+        "final": [
+            {
+                "category": "Finální otázka",
+                "clue": "Velká osobnost společenského života Olga Havlová má nejnižší průměrnou roční teplotu 0,2° C. Během úplného zatmění slunce, cestou na východní frontu, sháněla pro svého nadporučíka koňak. Stejně jako před 21 lety její matka, která silně leptá pokožku i sliznice apod.<br><br>O KOHO JDE?"
+            },
+            {
+                "category": "Doopravdy finální otázka",
+                "clue": "Kolik let od svatby tento rok slavíte?❤",
+                "clueSize": "7rem"
+            }
+        ]
     }
 }

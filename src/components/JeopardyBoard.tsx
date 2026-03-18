@@ -1,38 +1,39 @@
-import React, { useState, useEffect, useCallback } from 'react';
+import React, { useEffect, useCallback } from 'react';
 import './JeopardyBoard.css';
-import { Category, Clue } from '../types';
+import { Category, Clue, ActiveClue } from '../types';
 
 interface Props {
     categories: Category[];
+    chosenClues: Set<string>;
+    activeClue: ActiveClue | null;
+    onClueOpen: (key: string, clue: ActiveClue) => void;
+    onClueDismiss: () => void;
     onProceedToFinal: () => void;
 }
 
-interface ActiveClue {
-    category: string;
-    value: number;
-    clue: string;
-}
+const clueKey = (categoryIndex: number, clueIndex: number) =>
+    `${categoryIndex}-${clueIndex}`;
 
-const JeopardyBoard: React.FC<Props> = ({ categories, onProceedToFinal }) => {
-    const [chosenClues, setChosenClues] = useState<Set<string>>(new Set());
-    const [activeClue, setActiveClue] = useState<ActiveClue | null>(null);
-
-    const clueKey = (categoryIndex: number, clueIndex: number) =>
-        `${categoryIndex}-${clueIndex}`;
-
+const JeopardyBoard: React.FC<Props> = ({
+    categories,
+    chosenClues,
+    activeClue,
+    onClueOpen,
+    onClueDismiss,
+    onProceedToFinal,
+}) => {
     const totalClues = categories.reduce((sum, cat) => sum + cat.clues.length, 0);
     const allChosen = chosenClues.size >= totalClues;
 
     const showClue = (category: string, clue: Clue, categoryIndex: number, clueIndex: number) => {
         const key = clueKey(categoryIndex, clueIndex);
         if (chosenClues.has(key)) return;
-        setChosenClues(prev => new Set(prev).add(key));
-        setActiveClue({ category, value: clue.value, clue: clue.clue });
+        onClueOpen(key, { category, value: clue.value, clue: clue.clue });
     };
 
     const dismissClue = useCallback(() => {
-        setActiveClue(null);
-    }, []);
+        onClueDismiss();
+    }, [onClueDismiss]);
 
     useEffect(() => {
         if (!activeClue) return;

@@ -22,23 +22,23 @@ const styles: Record<string, React.CSSProperties> = {
         boxSizing: 'border-box',
     },
     label: {
-        fontFamily: 'Swiss921, sans-serif',
-        fontSize: '3rem',
+        fontFamily: 'Oswald, sans-serif',
+        fontSize: '4.5rem',
         color: '#D4AF37',
         marginBottom: '32px',
         textTransform: 'uppercase' as const,
         letterSpacing: '0.1em',
     },
     category: {
-        fontFamily: 'Swiss921, sans-serif',
-        fontSize: '3rem',
+        fontFamily: 'Oswald, sans-serif',
+        fontSize: '6rem',
         color: '#fff',
         textAlign: 'center' as const,
         textTransform: 'uppercase' as const,
     },
     clue: {
-        fontFamily: 'Korinna, serif',
-        fontSize: '6rem',
+        fontFamily: 'Lora, serif',
+        fontSize: '3.3rem',
         color: '#fff',
         textAlign: 'center' as const,
         lineHeight: 1.4,
@@ -70,11 +70,11 @@ const FinalJeopardy: React.FC<Props> = ({ round, onFinishGame }) => {
 
     return (
         <div style={styles.container} onClick={advance}>
-            <div style={styles.label}>Prémiová otázka</div>
+            <div style={styles.label}>{round.category}</div>
             {phase === 'category' ? (
-                <div style={styles.category}>{round.category}</div>
+                <div style={styles.category}>Jdeme do finále</div>
             ) : (
-                <div style={styles.clue}>{round.clue}</div>
+                <div style={{ ...styles.clue, ...(round.clueSize ? { fontSize: round.clueSize } : {}) }}>{round.clue}</div>
             )}
         </div>
     );

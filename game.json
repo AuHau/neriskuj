@@ -127,10 +127,16 @@
                 ]
             }
         ],
-        "final": {
-            "category": "Finálová kategorie",
-            "clue": "(Doplňte finálovou otázku)",
-            "solution": ""
-        }
+        "final": [
+            {
+                "category": "Finální otázka",
+                "clue": "Velká osobnost společenského života Olga Havlová má nejnižší průměrnou roční teplotu 0,2° C. Během úplného zatmění slunce, cestou na východní frontu, sháněla pro svého nadporučíka koňak. Stejně jako před 21 lety její matka, která silně leptá pokožku i sliznice apod.<br><br>O KOHO JDE?"
+            },
+            {
+                "category": "Doopravdy finální otázka",
+                "clue": "Kolik let od svatby tento rok slavíte?❤",
+                "clueSize": "7rem"
+            }
+        ]
     }
 }

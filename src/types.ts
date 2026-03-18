@@ -12,12 +12,13 @@ export interface Category {
 export interface FinalRound {
     category: string;
     clue: string;
+    clueSize?: string;
     solution?: string;
 }
 
 export interface Game {
     single: Category[];
-    final: FinalRound;
+    final: FinalRound[];
 }
 
 export interface GameData {
@@ -25,3 +26,9 @@ export interface GameData {
 }
 
 export type RoundName = "single" | "final" | "done";
+
+export interface ActiveClue {
+    category: string;
+    value: number;
+    clue: string;
+}

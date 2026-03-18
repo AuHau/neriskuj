@@ -1,12 +1,3 @@
-@font-face {
-  font-family: 'Korinna';
-  src: url('./fonts/korinna.ttf') format('truetype');
-}
-
-@font-face {
-  font-family: 'Swiss921';
-  src: url('./fonts/Swiss921-BT_43276.ttf') format('truetype');
-}
 
 body {
   margin: 0;
