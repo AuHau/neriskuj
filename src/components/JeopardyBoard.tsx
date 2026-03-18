@@ -62,7 +62,7 @@ const JeopardyBoard: React.FC<Props> = ({ categories, onProceedToFinal }) => {
                         <div className="board-cell">
                             <span className="category-name">{cat.category}</span>
                         </div>
-                        {cat.clues.map((clue, clueIdx) => {
+                        {[...cat.clues].sort((a, b) => a.value - b.value).map((clue, clueIdx) => {
                             const key = clueKey(catIdx, clueIdx);
                             const chosen = chosenClues.has(key);
                             return (
